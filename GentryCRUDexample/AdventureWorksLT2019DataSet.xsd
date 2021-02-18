@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AdventureWorksLT2019DataSet" targetNamespace="http://tempuri.org/AdventureWorksLT2019DataSet.xsd" xmlns:mstns="http://tempuri.org/AdventureWorksLT2019DataSet.xsd" xmlns="http://tempuri.org/AdventureWorksLT2019DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AdventureWorksLT2019ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AdventureWorksLT2019ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GentryCRUDexample.Properties.Settings.GlobalReference.Default.AdventureWorksLT2019ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="productViewTableAdapter" GeneratorDataComponentClassName="productViewTableAdapter" Name="productView" UserDataComponentName="productViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AdventureWorksLT2019ConnectionString (Settings)" DbObjectName="AdventureWorksLT2019.dbo.productView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductID, [product name], [catigory name], Color, Size, Weight, ListPrice, Description, StandardCost, ProductNumber, SellStartDate, SellEndDate, rowguid FROM dbo.productView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductID" DataSetColumn="ProductID" />
+              <Mapping SourceColumn="product name" DataSetColumn="product name" />
+              <Mapping SourceColumn="catigory name" DataSetColumn="catigory name" />
+              <Mapping SourceColumn="Color" DataSetColumn="Color" />
+              <Mapping SourceColumn="Size" DataSetColumn="Size" />
+              <Mapping SourceColumn="Weight" DataSetColumn="Weight" />
+              <Mapping SourceColumn="ListPrice" DataSetColumn="ListPrice" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="StandardCost" DataSetColumn="StandardCost" />
+              <Mapping SourceColumn="ProductNumber" DataSetColumn="ProductNumber" />
+              <Mapping SourceColumn="SellStartDate" DataSetColumn="SellStartDate" />
+              <Mapping SourceColumn="SellEndDate" DataSetColumn="SellEndDate" />
+              <Mapping SourceColumn="rowguid" DataSetColumn="rowguid" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AdventureWorksLT2019DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="AdventureWorksLT2019DataSet" msprop:Generator_UserDSName="AdventureWorksLT2019DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="productView" msprop:Generator_TableClassName="productViewDataTable" msprop:Generator_TableVarName="tableproductView" msprop:Generator_TablePropName="productView" msprop:Generator_RowDeletingName="productViewRowDeleting" msprop:Generator_RowChangingName="productViewRowChanging" msprop:Generator_RowEvHandlerName="productViewRowChangeEventHandler" msprop:Generator_RowDeletedName="productViewRowDeleted" msprop:Generator_UserTableName="productView" msprop:Generator_RowChangedName="productViewRowChanged" msprop:Generator_RowEvArgName="productViewRowChangeEvent" msprop:Generator_RowClassName="productViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductID" msprop:Generator_ColumnVarNameInTable="columnProductID" msprop:Generator_ColumnPropNameInRow="ProductID" msprop:Generator_ColumnPropNameInTable="ProductIDColumn" msprop:Generator_UserColumnName="ProductID" type="xs:int" />
+              <xs:element name="product_x0020_name" msprop:Generator_ColumnVarNameInTable="columnproduct_name" msprop:Generator_ColumnPropNameInRow="product_name" msprop:Generator_ColumnPropNameInTable="product_nameColumn" msprop:Generator_UserColumnName="product name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="catigory_x0020_name" msprop:Generator_ColumnVarNameInTable="columncatigory_name" msprop:Generator_ColumnPropNameInRow="catigory_name" msprop:Generator_ColumnPropNameInTable="catigory_nameColumn" msprop:Generator_UserColumnName="catigory name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Color" msprop:Generator_ColumnVarNameInTable="columnColor" msprop:Generator_ColumnPropNameInRow="Color" msprop:Generator_ColumnPropNameInTable="ColorColumn" msprop:Generator_UserColumnName="Color" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Size" msprop:Generator_ColumnVarNameInTable="columnSize" msprop:Generator_ColumnPropNameInRow="Size" msprop:Generator_ColumnPropNameInTable="SizeColumn" msprop:Generator_UserColumnName="Size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_UserColumnName="Weight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ListPrice" msprop:Generator_ColumnVarNameInTable="columnListPrice" msprop:Generator_ColumnPropNameInRow="ListPrice" msprop:Generator_ColumnPropNameInTable="ListPriceColumn" msprop:Generator_UserColumnName="ListPrice" type="xs:decimal" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StandardCost" msprop:Generator_ColumnVarNameInTable="columnStandardCost" msprop:Generator_ColumnPropNameInRow="StandardCost" msprop:Generator_ColumnPropNameInTable="StandardCostColumn" msprop:Generator_UserColumnName="StandardCost" type="xs:decimal" />
+              <xs:element name="ProductNumber" msprop:Generator_ColumnVarNameInTable="columnProductNumber" msprop:Generator_ColumnPropNameInRow="ProductNumber" msprop:Generator_ColumnPropNameInTable="ProductNumberColumn" msprop:Generator_UserColumnName="ProductNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SellStartDate" msprop:Generator_ColumnVarNameInTable="columnSellStartDate" msprop:Generator_ColumnPropNameInRow="SellStartDate" msprop:Generator_ColumnPropNameInTable="SellStartDateColumn" msprop:Generator_UserColumnName="SellStartDate" type="xs:dateTime" />
+              <xs:element name="SellEndDate" msprop:Generator_ColumnVarNameInTable="columnSellEndDate" msprop:Generator_ColumnPropNameInRow="SellEndDate" msprop:Generator_ColumnPropNameInTable="SellEndDateColumn" msprop:Generator_UserColumnName="SellEndDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="rowguid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnrowguid" msprop:Generator_ColumnPropNameInRow="rowguid" msprop:Generator_ColumnPropNameInTable="rowguidColumn" msprop:Generator_UserColumnName="rowguid" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:productView" />
+      <xs:field xpath="mstns:ProductID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
